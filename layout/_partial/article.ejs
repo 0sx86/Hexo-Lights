@@ -37,16 +37,5 @@
             <span><%= config.subtitle %></span>
         </div>
         </a>
-        <section id="sharing">
-            <a title="Share to Twitter" class="twitter" href="https://twitter.com/intent/tweet?text=<%- page.permalink %> - <%= item.title || '(' + __('no_title') + ')'  %> @<%- theme.twitter %>"><span class="icon-twitter">tweet</span></a>
-            <a title="Share to Facebook" class="facebook" href="#" onclick="
-                window.open(
-                  'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),
-                  'facebook-share-dialog',
-                  'width=626,height=436');
-                return false;"><span class="icon-facebook-sign">Share</span>
-            </a>
-        </section>
     </footer>
 <% } %>
-<%- partial('comment') %>
