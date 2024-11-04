@@ -28,14 +28,3 @@
             <%- tags.join(', ') %>
         </h2>
     <% } %>
-<% if(is_post()){ %>
-    <footer id="post-meta" class="clearfix">
-        <a href="<%- config.root %><%- theme.profile_link %>">
-        <img class="avatar" src="<%- theme.avatar %>">
-        <div>
-            <span class="dark"><%= config.title %></span>
-            <span><%= config.subtitle %></span>
-        </div>
-        </a>
-    </footer>
-<% } %>
